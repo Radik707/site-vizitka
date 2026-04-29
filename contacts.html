@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Олег, вайбкодер и автоматизация бизнеса</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/theme-light.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Олег</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="portfolio.html" class="nav__link">Кейсы</a>
+        <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero__eyebrow">Контакты</p>
+        <h1 class="page-hero__title">Давайте обсудим</h1>
+        <p class="page-hero__text">Выберите удобный способ — напишите в любое время. Обычно отвечаю в течение часа.</p>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container">
+
+        <div class="contacts-messengers">
+
+          <a href="https://t.me/ZhukOleh" class="contacts-channel" target="_blank" rel="noopener">
+            <span class="contacts-channel__icon">✈️</span>
+            <span class="contacts-channel__name">Telegram</span>
+            <span class="contacts-channel__hint">Самый быстрый способ. Отвечаю в течение часа, созваниваемся там же.</span>
+            <span class="contacts-channel__action">Написать →</span>
+          </a>
+
+          <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="contacts-channel" target="_blank" rel="noopener">
+            <span class="contacts-channel__icon">💬</span>
+            <span class="contacts-channel__name">Max</span>
+            <span class="contacts-channel__hint">Если вы пользуетесь мессенджером Max — пишите напрямую, буду рад.</span>
+            <span class="contacts-channel__action">Написать →</span>
+          </a>
+
+          <a href="https://vk.com/id135664060" class="contacts-channel" target="_blank" rel="noopener">
+            <span class="contacts-channel__icon">🔷</span>
+            <span class="contacts-channel__name">ВКонтакте</span>
+            <span class="contacts-channel__hint">Удобно, если вы чаще в ВКонтакте. Отслеживаю сообщения регулярно.</span>
+            <span class="contacts-channel__action">Написать →</span>
+          </a>
+
+        </div>
+
+        <div class="contacts-next">
+          <p class="section-eyebrow">Что будет дальше</p>
+          <h2 class="section-title">После вашего сообщения</h2>
+          <div class="contacts-next__steps">
+
+            <div class="contacts-next__step">
+              <span class="contacts-next__num">01</span>
+              <div class="contacts-next__body">
+                <h3 class="contacts-next__title">Знакомимся с задачей</h3>
+                <p class="contacts-next__text">Просто напишите, как вы это видите и что хотите получить — своими словами, как вам удобно. Если сложно сформулировать, помогу разобраться вместе.</p>
+              </div>
+            </div>
+
+            <div class="contacts-next__step">
+              <span class="contacts-next__num">02</span>
+              <div class="contacts-next__body">
+                <h3 class="contacts-next__title">Созваниваемся на 20 минут</h3>
+                <p class="contacts-next__text">Max, телефон или голосовые в Telegram. За 20 минут становится понятно: что делаем, в какие сроки, нет ли подводных камней.</p>
+              </div>
+            </div>
+
+            <div class="contacts-next__step">
+              <span class="contacts-next__num">03</span>
+              <div class="contacts-next__body">
+                <h3 class="contacts-next__title">Получаете чёткое предложение (оффер)</h3>
+                <p class="contacts-next__text">Что именно будет сделано, сколько стоит и когда будет готово. Никакой воды и расплывчатых формулировок.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Олег · <a href="https://t.me/ZhukOleh" target="_blank" rel="noopener">Telegram</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Переключатель темы
+    (function () {
+      var html = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('site-theme');
+      if (saved) html.setAttribute('data-theme', saved);
+      btn.addEventListener('click', function () {
+        var next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('site-theme', next);
+      });
+    }());
+  </script>
+
+</body>
+</html>

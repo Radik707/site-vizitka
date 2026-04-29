@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейсы — Олег, вайбкодер и автоматизация бизнеса</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/theme-light.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Олег</a>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="portfolio.html" class="nav__link nav__link--active">Кейсы</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="hero__eyebrow">Кейсы</p>
+        <h1 class="page-hero__title">Реальные задачи —<br><span class="accent">конкретные результаты</span></h1>
+        <p class="page-hero__text">Проекты из практики: автоматизации, сайты и боты, которые реально работают в бизнесах клиентов.</p>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+
+        <div class="portfolio-filter" role="group" aria-label="Фильтр по категориям">
+          <button class="portfolio-filter__btn portfolio-filter__btn--active" data-filter="all">Все</button>
+          <button class="portfolio-filter__btn" data-filter="automation">Автоматизация</button>
+          <button class="portfolio-filter__btn" data-filter="website">Сайты</button>
+          <button class="portfolio-filter__btn" data-filter="bot">Telegram-боты</button>
+        </div>
+
+        <div class="portfolio-list">
+
+          <article class="portfolio-case" data-category="automation">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">01</span>
+              <span class="portfolio-case__tag">Автоматизация</span>
+              <h2 class="portfolio-case__title">Автоматический учёт заявок</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">n8n</span>
+                <span class="stack-item">Telegram Bot API</span>
+                <span class="stack-item">Google Sheets</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Заявки с сайта терялись: часть падала в почту, часть в CRM, менеджеры дублировали работу и не успевали обрабатывать лиды вовремя.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Настроил автоматизацию на n8n: заявка с сайта → запись в CRM → мгновенное уведомление менеджеру в Telegram с кнопкой «взять в работу». Дедупликация по email исключает повторы.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">3 часа</span>
+                  <span class="portfolio-case__metric-label">экономия в день</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">0 ошибок</span>
+                  <span class="portfolio-case__metric-label">при передаче данных</span>
+                </div>
+              </div>
+              <a href="https://t.me/@ZhukOleh" class="portfolio-case__cta" target="_blank" rel="noopener">Обсудить похожую задачу →</a>
+            </div>
+          </article>
+
+          <article class="portfolio-case" data-category="website">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">02</span>
+              <span class="portfolio-case__tag">Сайт</span>
+              <h2 class="portfolio-case__title">Лендинг для онлайн-школы</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">HTML / CSS / JS</span>
+                <span class="stack-item">Google Sheets</span>
+                <span class="stack-item">Google Apps Script</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Онлайн-школа работала через Instagram и ручную запись в таблицу. Нужен сайт с автоматическим сбором заявок, подтверждениями и уведомлениями куратору.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Сделал лендинг с формой записи, подключённой к Google Sheets. Google Apps Script автоматически отправляет подтверждение ученику и уведомляет куратора. От брифа до запуска — 4 дня.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">4 дня</span>
+                  <span class="portfolio-case__metric-label">от брифа до запуска</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">+40%</span>
+                  <span class="portfolio-case__metric-label">конверсия в заявку</span>
+                </div>
+              </div>
+              <a href="https://t.me/@ZhukOleh" class="portfolio-case__cta" target="_blank" rel="noopener">Обсудить похожую задачу →</a>
+            </div>
+          </article>
+
+          <article class="portfolio-case" data-category="bot">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">03</span>
+              <span class="portfolio-case__tag">Telegram-бот</span>
+              <h2 class="portfolio-case__title">Бот для записи клиентов</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">Telegram Bot API</span>
+                <span class="stack-item">Google Calendar</span>
+                <span class="stack-item">n8n</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Мастер тратил 1–2 часа в день на переписку: уточнял время, подтверждал записи и напоминал о визитах. Часть клиентов просто не доходила.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Telegram-бот принимает запись, уточняет удобное время и услугу, добавляет событие в Google Календарь и отправляет клиенту напоминание за час до визита. Мастер просто видит готовое расписание.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">24/7</span>
+                  <span class="portfolio-case__metric-label">приём заявок</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">−80%</span>
+                  <span class="portfolio-case__metric-label">пропущенных записей</span>
+                </div>
+              </div>
+              <a href="https://t.me/@ZhukOleh" class="portfolio-case__cta" target="_blank" rel="noopener">Обсудить похожую задачу →</a>
+            </div>
+          </article>
+
+          <article class="portfolio-case" data-category="automation">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">04</span>
+              <span class="portfolio-case__tag">Автоматизация</span>
+              <h2 class="portfolio-case__title">Ежедневный отчёт из CRM</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">Make</span>
+                <span class="stack-item">Google Sheets</span>
+                <span class="stack-item">Telegram Bot API</span>
+                <span class="stack-item">Airtable</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Руководитель тратил 2 часа ежедневно: вручную сводил данные из CRM, таблиц и мессенджеров в один управленческий отчёт.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Настроил сценарий на Make: данные из CRM и Google Sheets собираются автоматически, формируют ежедневный отчёт и отправляют в Telegram-канал руководителю ровно в 9:00.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">2 часа</span>
+                  <span class="portfolio-case__metric-label">экономия каждый день</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">1 сценарий</span>
+                  <span class="portfolio-case__metric-label">заменил ручную работу</span>
+                </div>
+              </div>
+              <a href="https://t.me/@ZhukOleh" class="portfolio-case__cta" target="_blank" rel="noopener">Обсудить похожую задачу →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <p class="section-eyebrow">Начать</p>
+        <h2 class="final-cta__title">Есть похожая задача —<br><span class="accent">давайте решим</span></h2>
+        <p class="final-cta__text">20 минут в Telegram или Zoom — и у вас будет чёткое понимание, что делать и сколько это стоит.</p>
+        <a href="https://t.me/@ZhukOleh" class="btn btn--primary" target="_blank" rel="noopener">Написать в Telegram</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Олег · <a href="https://t.me/@ZhukOleh" target="_blank" rel="noopener">Telegram</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Переключатель темы
+    (function () {
+      var html = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var saved = localStorage.getItem('site-theme');
+      if (saved) html.setAttribute('data-theme', saved);
+      btn.addEventListener('click', function () {
+        var next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('site-theme', next);
+      });
+    }());
+
+    // Фильтр кейсов по категории
+    document.querySelectorAll('.portfolio-filter__btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var category = btn.dataset.filter;
+        document.querySelectorAll('.portfolio-filter__btn').forEach(function (b) {
+          b.classList.remove('portfolio-filter__btn--active');
+        });
+        btn.classList.add('portfolio-filter__btn--active');
+        document.querySelectorAll('.portfolio-case').forEach(function (item) {
+          item.hidden = !(category === 'all' || item.dataset.category === category);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
