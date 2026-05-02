@@ -25,32 +25,32 @@
 
     <section class="page-hero">
       <div class="container">
-        <p class="hero__eyebrow">Контакты</p>
-        <h1 class="page-hero__title">Давайте обсудим</h1>
-        <p class="page-hero__text">Выберите удобный способ — напишите в любое время. Обычно отвечаю в течение часа.</p>
+        <p class="hero__eyebrow reveal">Контакты</p>
+        <h1 class="page-hero__title reveal" style="transition-delay:.1s">Давайте обсудим</h1>
+        <p class="page-hero__text reveal" style="transition-delay:.2s">Выберите удобный способ — напишите в любое время. Обычно отвечаю в течение часа.</p>
       </div>
     </section>
 
     <section class="contacts">
       <div class="container">
 
-        <div class="contacts-messengers">
+        <div class="contacts-messengers reveal-group">
 
-          <a href="https://t.me/ZhukOleh" class="contacts-channel" target="_blank" rel="noopener">
+          <a href="https://t.me/ZhukOleh" class="contacts-channel reveal" target="_blank" rel="noopener">
             <span class="contacts-channel__icon">✈️</span>
             <span class="contacts-channel__name">Telegram</span>
             <span class="contacts-channel__hint">Самый быстрый способ. Отвечаю в течение часа, созваниваемся там же.</span>
             <span class="contacts-channel__action">Написать →</span>
           </a>
 
-          <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="contacts-channel" target="_blank" rel="noopener">
+          <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="contacts-channel reveal" target="_blank" rel="noopener">
             <span class="contacts-channel__icon">💬</span>
             <span class="contacts-channel__name">Max</span>
             <span class="contacts-channel__hint">Если вы пользуетесь мессенджером Max — пишите напрямую, буду рад.</span>
             <span class="contacts-channel__action">Написать →</span>
           </a>
 
-          <a href="https://vk.com/id135664060" class="contacts-channel" target="_blank" rel="noopener">
+          <a href="https://vk.com/id135664060" class="contacts-channel reveal" target="_blank" rel="noopener">
             <span class="contacts-channel__icon">🔷</span>
             <span class="contacts-channel__name">ВКонтакте</span>
             <span class="contacts-channel__hint">Удобно, если вы чаще в ВКонтакте. Отслеживаю сообщения регулярно.</span>
@@ -60,11 +60,11 @@
         </div>
 
         <div class="contacts-next">
-          <p class="section-eyebrow">Что будет дальше</p>
-          <h2 class="section-title">После вашего сообщения</h2>
-          <div class="contacts-next__steps">
+          <p class="section-eyebrow reveal">Что будет дальше</p>
+          <h2 class="section-title reveal" style="transition-delay:.1s">После вашего сообщения</h2>
+          <div class="contacts-next__steps reveal-group">
 
-            <div class="contacts-next__step">
+            <div class="contacts-next__step reveal">
               <span class="contacts-next__num">01</span>
               <div class="contacts-next__body">
                 <h3 class="contacts-next__title">Знакомимся с задачей</h3>
@@ -72,7 +72,7 @@
               </div>
             </div>
 
-            <div class="contacts-next__step">
+            <div class="contacts-next__step reveal">
               <span class="contacts-next__num">02</span>
               <div class="contacts-next__body">
                 <h3 class="contacts-next__title">Созваниваемся на 20 минут</h3>
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <div class="contacts-next__step">
+            <div class="contacts-next__step reveal">
               <span class="contacts-next__num">03</span>
               <div class="contacts-next__body">
                 <h3 class="contacts-next__title">Получаете чёткое предложение (оффер)</h3>
@@ -102,6 +102,7 @@
     </div>
   </footer>
 
+  <script src="scripts/animations.js"></script>
   <script>
     // Переключатель темы
     (function () {

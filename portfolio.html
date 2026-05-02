@@ -25,25 +25,25 @@
 
     <section class="page-hero">
       <div class="container">
-        <p class="hero__eyebrow">Кейсы</p>
-        <h1 class="page-hero__title">Реальные задачи —<br><span class="accent">конкретные результаты</span></h1>
-        <p class="page-hero__text">Проекты из практики: автоматизации, сайты и боты, которые реально работают в бизнесах клиентов.</p>
+        <p class="hero__eyebrow reveal">Кейсы</p>
+        <h1 class="page-hero__title reveal" style="transition-delay:.1s">Реальные задачи —<br><span class="accent">конкретные результаты</span></h1>
+        <p class="page-hero__text reveal" style="transition-delay:.2s">Проекты из практики: автоматизации, сайты и боты, которые реально работают в бизнесах клиентов.</p>
       </div>
     </section>
 
     <section class="portfolio">
       <div class="container">
 
-        <div class="portfolio-filter" role="group" aria-label="Фильтр по категориям">
+        <div class="portfolio-filter reveal" role="group" aria-label="Фильтр по категориям">
           <button class="portfolio-filter__btn portfolio-filter__btn--active" data-filter="all">Все</button>
           <button class="portfolio-filter__btn" data-filter="automation">Автоматизация</button>
           <button class="portfolio-filter__btn" data-filter="website">Сайты</button>
           <button class="portfolio-filter__btn" data-filter="bot">Telegram-боты</button>
         </div>
 
-        <div class="portfolio-list">
+        <div class="portfolio-list reveal-group">
 
-          <article class="portfolio-case" data-category="automation">
+          <article class="portfolio-case reveal" data-category="automation">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">01</span>
               <span class="portfolio-case__tag">Автоматизация</span>
@@ -81,7 +81,7 @@
             </div>
           </article>
 
-          <article class="portfolio-case" data-category="website">
+          <article class="portfolio-case reveal" data-category="website">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">02</span>
               <span class="portfolio-case__tag">Сайт</span>
@@ -119,7 +119,7 @@
             </div>
           </article>
 
-          <article class="portfolio-case" data-category="bot">
+          <article class="portfolio-case reveal" data-category="bot">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">03</span>
               <span class="portfolio-case__tag">Telegram-бот</span>
@@ -157,7 +157,7 @@
             </div>
           </article>
 
-          <article class="portfolio-case" data-category="automation">
+          <article class="portfolio-case reveal" data-category="automation">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">04</span>
               <span class="portfolio-case__tag">Автоматизация</span>
@@ -202,10 +202,10 @@
 
     <section class="final-cta">
       <div class="container">
-        <p class="section-eyebrow">Начать</p>
-        <h2 class="final-cta__title">Есть похожая задача —<br><span class="accent">давайте решим</span></h2>
-        <p class="final-cta__text">20 минут в Telegram или Zoom — и у вас будет чёткое понимание, что делать и сколько это стоит.</p>
-        <div class="btn-split btn-split--primary" role="group" aria-label="Написать">
+        <p class="section-eyebrow reveal">Начать</p>
+        <h2 class="final-cta__title reveal" style="transition-delay:.1s">Есть похожая задача —<br><span class="accent">давайте решим</span></h2>
+        <p class="final-cta__text reveal" style="transition-delay:.2s">20 минут в Telegram или Zoom — и у вас будет чёткое понимание, что делать и сколько это стоит.</p>
+        <div class="btn-split btn-split--primary reveal" style="transition-delay:.3s" role="group" aria-label="Написать">
           <span class="btn-split__label">Написать</span>
           <hr class="btn-split__divider" aria-hidden="true">
           <div class="btn-split__row">
@@ -224,6 +224,7 @@
     </div>
   </footer>
 
+  <script src="scripts/animations.js"></script>
   <script>
     // Переключатель темы
     (function () {
