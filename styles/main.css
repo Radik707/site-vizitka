@@ -524,6 +524,17 @@ body {
   transform: translateY(-4px);
 }
 
+/* Карточка-тизер как ссылка (избранные кейсы на главной) */
+a.case-card {
+  text-decoration: none;
+}
+
+/* Кнопка «Все кейсы» под сеткой тизеров */
+.cases__more {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 .case-card__tag {
   font-size: 0.6875rem;
   font-weight: 500;
@@ -1517,5 +1528,129 @@ details[open] .faq-item__question::after {
   .portfolio-case__metrics {
     gap: 1.5rem;
     flex-wrap: wrap;
+  }
+}
+
+/* ============================================================
+   Гарантии — честный блок доверия внутри секции «Подход»
+   (что клиент получает в любом случае)
+   ============================================================ */
+
+.guarantees {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  background: var(--bg-surface);
+}
+
+.guarantees__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+}
+
+.guarantees__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem 2.5rem;
+  list-style: none;
+}
+
+.guarantees__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.guarantees__item::before {
+  content: "✓";
+  color: var(--gold-classic);
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .guarantees {
+    padding: 2rem 1.75rem;
+  }
+
+  .guarantees__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
+   Отзывы — карточки соцпруфа
+   ВНИМАНИЕ: секция .reviews пока скрыта в index.html (обёрнута
+   в HTML-комментарий). Стили готовы к моменту наполнения.
+   ============================================================ */
+
+.reviews {
+  padding: 160px 0;
+  background: var(--bg-void);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.review-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: border-color 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+.review-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+}
+
+.review-card__text {
+  font-size: 1rem;
+  color: var(--text-primary);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.review-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.review-card__name {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.review-card__role {
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 720px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
   }
 }

@@ -26,8 +26,8 @@
     <section class="page-hero">
       <div class="container">
         <p class="hero__eyebrow reveal">Кейсы</p>
-        <h1 class="page-hero__title reveal" style="transition-delay:.1s">Реальные задачи —<br><span class="accent">конкретные результаты</span></h1>
-        <p class="page-hero__text reveal" style="transition-delay:.2s">Проекты из практики: автоматизации, сайты и боты, которые реально работают в бизнесах клиентов.</p>
+        <h1 class="page-hero__title reveal" style="transition-delay:.1s">Проекты, которые<br><span class="accent">уже работают</span></h1>
+        <p class="page-hero__text reveal" style="transition-delay:.2s">Боты, ИИ-агенты, автоматизации и сайты — собранные, доведённые до рабочего состояния и задеплоенные. Часть из них — личные проекты, на которых я отрабатываю подход.</p>
       </div>
     </section>
 
@@ -46,31 +46,34 @@
           <article class="portfolio-case reveal" data-category="automation">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">01</span>
-              <span class="portfolio-case__tag">Автоматизация</span>
-              <h2 class="portfolio-case__title">Автоматический учёт заявок</h2>
+              <span class="portfolio-case__tag">CRM-система</span>
+              <h2 class="portfolio-case__title">CRM для медтех-бизнеса на EspoCRM</h2>
               <div class="portfolio-case__stack">
-                <span class="stack-item">n8n</span>
-                <span class="stack-item">Telegram Bot API</span>
-                <span class="stack-item">Google Sheets</span>
+                <span class="stack-item">EspoCRM</span>
+                <span class="stack-item">PHP</span>
+                <span class="stack-item">MySQL</span>
+                <span class="stack-item">Docker</span>
+                <span class="stack-item">VPS</span>
+                <span class="stack-item">HTTPS</span>
               </div>
             </div>
             <div class="portfolio-case__right">
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Задача</p>
-                <p class="portfolio-case__block-text">Заявки с сайта терялись: часть падала в почту, часть в CRM, менеджеры дублировали работу и не успевали обрабатывать лиды вовремя.</p>
+                <p class="portfolio-case__block-text">Продажи, клиенты и оборудование жили в разрозненных таблицах — данные терялись, у руководителя не было полной картины.</p>
               </div>
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Решение</p>
-                <p class="portfolio-case__block-text">Настроил автоматизацию на n8n: заявка с сайта → запись в CRM → мгновенное уведомление менеджеру в Telegram с кнопкой «взять в работу». Дедупликация по email исключает повторы.</p>
+                <p class="portfolio-case__block-text">Собрал внутреннюю CRM на EspoCRM: воронка продаж, база клиник и партнёров, учёт оборудования с гарантиями, роли и права доступа. Все доработки — в отдельном переносимом модуле, ядро не трогал. Развернул на своём VPS в РФ под 152-ФЗ: Docker, HTTPS, автобэкапы.</p>
               </div>
               <div class="portfolio-case__metrics">
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">3 часа</span>
-                  <span class="portfolio-case__metric-label">экономия в день</span>
+                  <span class="portfolio-case__metric-value">14 стадий</span>
+                  <span class="portfolio-case__metric-label">воронка продаж</span>
                 </div>
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">0 ошибок</span>
-                  <span class="portfolio-case__metric-label">при передаче данных</span>
+                  <span class="portfolio-case__metric-value">5 ролей</span>
+                  <span class="portfolio-case__metric-label">разграничение доступа</span>
                 </div>
               </div>
               <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
@@ -84,69 +87,35 @@
           <article class="portfolio-case reveal" data-category="website">
             <div class="portfolio-case__left">
               <span class="portfolio-case__num">02</span>
-              <span class="portfolio-case__tag">Сайт</span>
-              <h2 class="portfolio-case__title">Лендинг для онлайн-школы</h2>
+              <span class="portfolio-case__tag">Веб-приложение</span>
+              <h2 class="portfolio-case__title">B2B-каталог для торгового представителя</h2>
               <div class="portfolio-case__stack">
-                <span class="stack-item">HTML / CSS / JS</span>
+                <span class="stack-item">Next.js</span>
+                <span class="stack-item">TypeScript</span>
+                <span class="stack-item">Tailwind</span>
                 <span class="stack-item">Google Sheets</span>
-                <span class="stack-item">Google Apps Script</span>
+                <span class="stack-item">Python</span>
+                <span class="stack-item">Cloudinary</span>
+                <span class="stack-item">Vercel</span>
               </div>
             </div>
             <div class="portfolio-case__right">
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Задача</p>
-                <p class="portfolio-case__block-text">Онлайн-школа работала через Instagram и ручную запись в таблицу. Нужен сайт с автоматическим сбором заявок, подтверждениями и уведомлениями куратору.</p>
+                <p class="portfolio-case__block-text">Владельцы магазинов заказывали по бумажным прайсам — без фото, без актуальных остатков, а заказы приходилось собирать вручную.</p>
               </div>
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Решение</p>
-                <p class="portfolio-case__block-text">Сделал лендинг с формой записи, подключённой к Google Sheets. Google Apps Script автоматически отправляет подтверждение ученику и уведомляет куратора. От брифа до запуска — 4 дня.</p>
+                <p class="portfolio-case__block-text">Сделал мобильный B2B-каталог: клиент открывает ссылку, видит товары с фото, ценами и наличием, собирает корзину и отправляет заказ в Telegram. Данные тянутся из Google Sheets, куда Python-скрипт ежедневно заливает прайсы поставщиков из Excel, а фото — в Cloudinary. Задеплоено на Vercel.</p>
               </div>
               <div class="portfolio-case__metrics">
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">4 дня</span>
-                  <span class="portfolio-case__metric-label">от брифа до запуска</span>
+                  <span class="portfolio-case__metric-value">935 товаров</span>
+                  <span class="portfolio-case__metric-label">фото, цены, остатки</span>
                 </div>
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">+40%</span>
-                  <span class="portfolio-case__metric-label">конверсия в заявку</span>
-                </div>
-              </div>
-              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
-                <span class="msg-links__label">Обсудить подобный кейс</span>
-                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
-                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="portfolio-case reveal" data-category="bot">
-            <div class="portfolio-case__left">
-              <span class="portfolio-case__num">03</span>
-              <span class="portfolio-case__tag">Telegram-бот</span>
-              <h2 class="portfolio-case__title">Бот для записи клиентов</h2>
-              <div class="portfolio-case__stack">
-                <span class="stack-item">Telegram Bot API</span>
-                <span class="stack-item">Google Calendar</span>
-                <span class="stack-item">n8n</span>
-              </div>
-            </div>
-            <div class="portfolio-case__right">
-              <div class="portfolio-case__block">
-                <p class="portfolio-case__block-label">Задача</p>
-                <p class="portfolio-case__block-text">Мастер тратил 1–2 часа в день на переписку: уточнял время, подтверждал записи и напоминал о визитах. Часть клиентов просто не доходила.</p>
-              </div>
-              <div class="portfolio-case__block">
-                <p class="portfolio-case__block-label">Решение</p>
-                <p class="portfolio-case__block-text">Telegram-бот принимает запись, уточняет удобное время и услугу, добавляет событие в Google Календарь и отправляет клиенту напоминание за час до визита. Мастер просто видит готовое расписание.</p>
-              </div>
-              <div class="portfolio-case__metrics">
-                <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">24/7</span>
-                  <span class="portfolio-case__metric-label">приём заявок</span>
-                </div>
-                <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">−80%</span>
-                  <span class="portfolio-case__metric-label">пропущенных записей</span>
+                  <span class="portfolio-case__metric-value">Vercel</span>
+                  <span class="portfolio-case__metric-label">задеплоено и работает</span>
                 </div>
               </div>
               <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
@@ -159,33 +128,35 @@
 
           <article class="portfolio-case reveal" data-category="automation">
             <div class="portfolio-case__left">
-              <span class="portfolio-case__num">04</span>
+              <span class="portfolio-case__num">03</span>
               <span class="portfolio-case__tag">Автоматизация</span>
-              <h2 class="portfolio-case__title">Ежедневный отчёт из CRM</h2>
+              <h2 class="portfolio-case__title">Новостной AI-дайджест в Telegram</h2>
               <div class="portfolio-case__stack">
-                <span class="stack-item">Make</span>
-                <span class="stack-item">Google Sheets</span>
-                <span class="stack-item">Telegram Bot API</span>
-                <span class="stack-item">Airtable</span>
+                <span class="stack-item">Python</span>
+                <span class="stack-item">OpenRouter (ИИ)</span>
+                <span class="stack-item">feedparser</span>
+                <span class="stack-item">SQLite</span>
+                <span class="stack-item">Docker</span>
+                <span class="stack-item">cron</span>
               </div>
             </div>
             <div class="portfolio-case__right">
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Задача</p>
-                <p class="portfolio-case__block-text">Руководитель тратил 2 часа ежедневно: вручную сводил данные из CRM, таблиц и мессенджеров в один управленческий отчёт.</p>
+                <p class="portfolio-case__block-text">Следить за десятками источников вручную — долго, важное теряется среди шума.</p>
               </div>
               <div class="portfolio-case__block">
                 <p class="portfolio-case__block-label">Решение</p>
-                <p class="portfolio-case__block-text">Настроил сценарий на Make: данные из CRM и Google Sheets собираются автоматически, формируют ежедневный отчёт и отправляют в Telegram-канал руководителю ровно в 9:00.</p>
+                <p class="portfolio-case__block-text">Собрал агента: каждое утро он тянет новости по RSS, ИИ отбирает значимое и сжимает в короткий дайджест, бот присылает его в Telegram. Работает на сервере в Docker по расписанию — полностью без участия человека.</p>
               </div>
               <div class="portfolio-case__metrics">
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">2 часа</span>
-                  <span class="portfolio-case__metric-label">экономия каждый день</span>
+                  <span class="portfolio-case__metric-value">9:00</span>
+                  <span class="portfolio-case__metric-label">каждое утро автоматически</span>
                 </div>
                 <div class="portfolio-case__metric">
-                  <span class="portfolio-case__metric-value">1 сценарий</span>
-                  <span class="portfolio-case__metric-label">заменил ручную работу</span>
+                  <span class="portfolio-case__metric-value">24/7</span>
+                  <span class="portfolio-case__metric-label">на сервере в Docker</span>
                 </div>
               </div>
               <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
@@ -195,6 +166,207 @@
               </div>
             </div>
           </article>
+
+          <article class="portfolio-case reveal" data-category="bot">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">04</span>
+              <span class="portfolio-case__tag">Telegram-бот</span>
+              <h2 class="portfolio-case__title">Telegram-ассистент для задач с ИИ</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">Python</span>
+                <span class="stack-item">aiogram</span>
+                <span class="stack-item">Claude API</span>
+                <span class="stack-item">OpenRouter</span>
+                <span class="stack-item">SQLite</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Задачи разбросаны, нет единого места и напоминаний, формулировки размытые.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Бот на aiogram: добавляешь цель — ИИ сам задаёт уточняющие вопросы, чтобы задача стала конкретной, ставит напоминания и подталкивает к выполнению.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Claude API</span>
+                  <span class="portfolio-case__metric-label">уточняющие вопросы от ИИ</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Напоминания</span>
+                  <span class="portfolio-case__metric-label">и мотивация</span>
+                </div>
+              </div>
+              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
+                <span class="msg-links__label">Обсудить подобный кейс</span>
+                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
+                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-case reveal" data-category="bot">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">05</span>
+              <span class="portfolio-case__tag">Telegram-бот</span>
+              <h2 class="portfolio-case__title">AI-нутрициолог: Telegram + Google Sheets</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">Telegram Bot API</span>
+                <span class="stack-item">Claude</span>
+                <span class="stack-item">Google Sheets</span>
+                <span class="stack-item">Apps Script</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Планировать меню и закупки вручную — хаотично и долго.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Связал Telegram, ИИ и Google Sheets: бот ведёт меню на день, учитывает запасы и сам формирует список покупок. Данные — в таблице, логика — на ИИ, интерфейс — в боте.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Telegram + ИИ + Sheets</span>
+                  <span class="portfolio-case__metric-label">связка в одном</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Авто</span>
+                  <span class="portfolio-case__metric-label">меню и список покупок</span>
+                </div>
+              </div>
+              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
+                <span class="msg-links__label">Обсудить подобный кейс</span>
+                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
+                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-case reveal" data-category="website">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">06</span>
+              <span class="portfolio-case__tag">Сайт</span>
+              <h2 class="portfolio-case__title">Лендинг с интерактивным калькулятором</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">HTML</span>
+                <span class="stack-item">CSS</span>
+                <span class="stack-item">Vanilla JS</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Клиенту трудно прикинуть стоимость до обращения — это барьер к заявке.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Лендинг с калькулятором: посетитель выбирает параметры и сразу видит цену. Полная адаптация под мобильные.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Онлайн</span>
+                  <span class="portfolio-case__metric-label">расчёт цены на странице</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Адаптив</span>
+                  <span class="portfolio-case__metric-label">под мобильные</span>
+                </div>
+              </div>
+              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
+                <span class="msg-links__label">Обсудить подобный кейс</span>
+                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
+                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="portfolio-case reveal" data-category="website">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">07</span>
+              <span class="portfolio-case__tag">Сайт</span>
+              <h2 class="portfolio-case__title">Интерактивный сайт-поздравление</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">HTML</span>
+                <span class="stack-item">Tailwind</span>
+                <span class="stack-item">GSAP</span>
+                <span class="stack-item">ScrollTrigger</span>
+                <span class="stack-item">Howler.js</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Нужен необычный персональный подарок к свадьбе — не открытка, а впечатление.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Интерактивный сайт со scroll-анимациями, музыкой и фото: история разворачивается по мере прокрутки. Персональный проект.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">GSAP</span>
+                  <span class="portfolio-case__metric-label">scroll-анимации</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">Аудио</span>
+                  <span class="portfolio-case__metric-label">музыка и фото</span>
+                </div>
+              </div>
+              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
+                <span class="msg-links__label">Обсудить подобный кейс</span>
+                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
+                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ШАБЛОН КЕЙСА. Скопируй этот блок ВЫШЕ комментария, поменяй
+               num/data-category (automation|website|bot)/тег/заголовок/стек/Задачу/Решение/факты.
+               НЕ выдумывай метрики — только реальные факты.
+
+          <article class="portfolio-case reveal" data-category="ВАРИАНТ: automation | website | bot">
+            <div class="portfolio-case__left">
+              <span class="portfolio-case__num">08</span>
+              <span class="portfolio-case__tag">ТИП ПРОЕКТА (напр. Автоматизация)</span>
+              <h2 class="portfolio-case__title">ЗАГОЛОВОК КЕЙСА</h2>
+              <div class="portfolio-case__stack">
+                <span class="stack-item">Технология 1</span>
+                <span class="stack-item">Технология 2</span>
+                <span class="stack-item">Технология 3</span>
+              </div>
+            </div>
+            <div class="portfolio-case__right">
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Задача</p>
+                <p class="portfolio-case__block-text">Какая проблема была у клиента и почему её нужно было решить.</p>
+              </div>
+              <div class="portfolio-case__block">
+                <p class="portfolio-case__block-label">Решение</p>
+                <p class="portfolio-case__block-text">Что собрал, как это работает, где задеплоено и что внутри.</p>
+              </div>
+              <div class="portfolio-case__metrics">
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">ФАКТ 1</span>
+                  <span class="portfolio-case__metric-label">пояснение к факту 1</span>
+                </div>
+                <div class="portfolio-case__metric">
+                  <span class="portfolio-case__metric-value">ФАКТ 2</span>
+                  <span class="portfolio-case__metric-label">пояснение к факту 2</span>
+                </div>
+              </div>
+              <div class="msg-links" role="group" aria-label="Обсудить подобный кейс">
+                <span class="msg-links__label">Обсудить подобный кейс</span>
+                <a href="https://t.me/@ZhukOleh" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Телеграме"><img src="icons/telegram.svg" alt="" width="52" height="52"></a>
+                <a href="https://max.ru/u/f9LHodD0cOJXA9Ci3XGubfvMmAdkaWaahWprgo3wpwQgSghAZoPytolDWyc" class="msg-links__icon" target="_blank" rel="noopener" aria-label="Обсудить подобный кейс в Макс"><img src="icons/max.svg" alt="" width="52" height="52"></a>
+              </div>
+            </div>
+          </article>
+
+          -->
 
         </div>
       </div>
