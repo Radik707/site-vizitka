@@ -1221,6 +1221,25 @@ details[open] .faq-item__question::after {
   align-self: flex-start;
 }
 
+/* Ссылка «посмотреть вживую» в кейсе */
+.portfolio-case__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  align-self: flex-start;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--gold-classic);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-gold);
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.portfolio-case__live:hover {
+  color: var(--gold-bright);
+  border-color: var(--gold-classic);
+}
+
 .portfolio-case__block {
   display: flex;
   flex-direction: column;
