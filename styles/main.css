@@ -1205,6 +1205,22 @@ details[open] .faq-item__question::after {
   gap: 2rem;
 }
 
+/* Скриншот-пруф внутри кейса */
+.portfolio-case__shot {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border-default);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Вертикальный скрин телефона — не растягиваем на всю ширину */
+.portfolio-case__shot--phone {
+  max-width: 300px;
+  align-self: flex-start;
+}
+
 .portfolio-case__block {
   display: flex;
   flex-direction: column;
